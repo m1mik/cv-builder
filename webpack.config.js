@@ -1,4 +1,5 @@
 const path = require("path");
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
@@ -119,5 +120,6 @@ module.exports = {
     }),
     new CaseSensitivePathsPlugin(), // it fixes bugs between OS in caseSensitivePaths (since Windows isn't CaseSensitive but Linux is)
     new FriendlyErrorsWebpackPlugin(),
-  ],
+    new NodePolyfillPlugin()
+  ]
 };

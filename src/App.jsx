@@ -1,13 +1,13 @@
 import React from 'react';
-import Some from '@/components/Some';
+import CV from './components/CV';
 
 const App = () => {
-  return (
-    <>
-      <h3>Minimal webpack config</h3>
-      <Some />
-    </>
-  );
+	return (
+		<>
+			<h3>Minimal webpack config</h3>
+			<CV />
+		</>
+	);
 };
 
 export default App;
