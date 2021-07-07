@@ -1,3 +1,4 @@
+import {A4_CM} from '@/constants';
 export const styles = {
     mainView: {
 		display: 'flex',
@@ -12,4 +13,9 @@ export const styles = {
 		minWidth: 'calc(100% - 300px)',
 		backgroundColor: '#fafafa',
 	},
+    avatar: {
+        width: '50px',
+        height: '50px',
+        display: 'block'
+    }
 }
