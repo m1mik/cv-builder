@@ -1,13 +1,7 @@
 import React from 'react';
 import CV from './components/CV';
+import './global-styles.scss';
 
-const App = () => {
-	return (
-		<>
-			<h3>Minimal webpack config</h3>
-			<CV />
-		</>
-	);
-};
+const App = () => <CV />;
 
 export default App;
